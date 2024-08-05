@@ -17,7 +17,7 @@ export default function QuestionAll() {
   };
 
   const onClick = (data) => {
-    navigate("/questionOne", { state: { answerId: data.answerId } });
+    navigate("/reply", { state: { answerId: data.answerId } });
   };
 
   const formatDate = (dateString) => {
@@ -75,9 +75,6 @@ const FormContainer = styled.div`
 
 const ContentDiv = styled.div`
   color: #fff;
- 
-
--questionall
   text-align: left;
   font-size: 16px;
   overflow: hidden;
@@ -102,14 +99,8 @@ const Profile = styled.img`
   position: absolute; 
   top:40px;
   margin-left: 0px;
-
 `;
 
-const Profile = styled.img`
-  width: 50px;
-  height: 50px;
-  margin: 5px;
-`;
 const Title = styled.div`
   display: flex;
   flex-direction: row;
@@ -164,4 +155,3 @@ const QuestionDiv = styled.div`
     }
   }
 `;
-
