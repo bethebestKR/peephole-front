@@ -17,7 +17,7 @@ export default function QuestionAll() {
 	};
 
 	const onClick = (data) => {
-		navigate("/reply", { state: { answerId: data.answerId } });
+		navigate("/QuestionOne", { state: { answerId: data.answerId } });
 	};
 
 	const formatDate = (dateString) => {
